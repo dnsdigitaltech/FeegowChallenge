@@ -1,0 +1,214 @@
+ul a {
+    color: #357ca5;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    display: block;
+    border-bottom: 1px solid;
+    margin-right: 10px ;
+}
+.group-span-filestyle label {
+    margin-top: 0px !important;
+    padding: 6px 10px;
+}   
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+.active, .accordion:hover {
+    background-color: #e4e4e4;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+label {
+    color: #404040 !important;
+}
+
+#formulario-acompanhante{
+    display: none;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100% !important;
+}
+.card-secondary:not(.card-outline)>.card-header {
+    background-color: #00b8bd;
+}
+.card-primary:not(.card-outline)>.card-header {
+    background-color: #f7f7f7;
+    color: #6c6c6c !important;
+    border-bottom: 1px solid #e7e7e7f4;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #00b8bd;
+    content: none !important;
+}
+.nav-tabs {
+    color: #747474;
+}
+.invalid-feedback {
+    display: none !important;
+}
+
+.select2{
+    width:100% !important;
+}
+
+.cardOption{
+    cursor: pointer;
+}
+.pixOption{
+    cursor: pointer;
+}
+.showpwd {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+}
+.relative {
+    position: relative;
+    width: fit-content;
+    i {
+        position: absolute;
+        top: 3px; 
+        right: 5px;
+    }
+}
+.ajs-close{
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    float: right;                    
+}
+.select2{
+    width:100% !important;
+}
+button {
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    color: #6481ac;
+}
+button:hover{
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    color: #6481ac;
+}
+.opt-credito{
+    float: left;
+    margin-right: 50px;
+}
+.opt-pix{
+    float: left;
+}
+.btn {
+    border: 0px;
+}
+
+.msg-cpf {
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    color: #1f2d3d;
+    background: #ffc107;
+    border-color: #edb100;
+}
+
+.msg-card {
+    position: relative;
+    /* padding: 0.75rem 1.25rem; */
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background: #B4C7E7;
+    color: #1f2d3d;
+    font-size: 13px;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 2rem;
+    }
+
+    .opt-credito{
+        float: left;
+    }
+    .opt-pix{
+        float: left;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 0;
+    }
+    
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 0;
+    }
+    a {
+        font-size: 0.8em !important;
+    }
+    .table {
+        font-size: 0.4em;
+    }
+    .table td, .table th {
+        padding: 0.5rem;
+    }
+    .copyright {
+        font-size: 0.6rem;
+    }
+    .card-title {
+        font-size: 0.7em !important;
+    }
+}

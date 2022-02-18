@@ -1,0 +1,236 @@
+ul a {
+    color: #357ca5;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    display: block;
+    border-bottom: 1px solid;
+    margin-right: 10px ;
+}
+
+.file-uploader {
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  color: #242424;
+}
+
+.file-uploader__message-area {
+  font-size: 18px;
+  padding: 1em;
+  text-align: left;
+  color: rgb(51, 51, 51);
+}
+
+.file-list {
+  background-color: white;
+  font-size: 16px;
+}
+
+.file-list__name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-list li {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 0.5em;
+  border: none;
+  overflow: hidden;
+  border-bottom: 1px dashed #f4f4f4;
+}
+
+.removal-button {
+  width: 20%;
+  border: none;
+  background-color: white;
+  color: #6481ac;
+}
+/*.removal-button::before {
+  content: "X";
+}*/
+.removal-button:focus {
+  outline: 0;
+}
+
+.file-chooser {
+  padding: 1em;
+  transition: background-color 1s, height 1s;
+}
+.file-chooser p {
+  font-size: 18px;
+  padding-top: 1em;
+}
+
+.file-uploader {
+  /*max-width: 400px;*/
+  height: auto;
+  /*margin: 2em auto;*/
+}
+.file-uploader * {
+  /*display: block;*/
+}
+.file-uploader input[type=submit] {
+  margin-top: 2em;
+  float: right;
+}
+
+.file-list {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.file-list__name {
+  max-width: 70%;
+  float: left;
+}
+
+.removal-button {
+  display: inline-block;
+  height: 100%;
+  float: right;
+}
+
+.file-chooser {
+  width: 90%;
+  /*margin: 0.5em auto;*/
+}
+
+.file-chooser__input {
+  margin: 0 auto;
+}
+
+/*.file-uploader__submit-button {
+  width: 100%;
+  border: none;
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: #72bfa7;
+  color: white;
+}*/
+.file-uploader__submit-button:hover {
+  background-color: #a7d7c8;
+}
+
+.file-list li:after, .file-uploader:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+.hidden input {
+  display: none;
+}
+
+.error {
+  background-color: #d65d38;
+  color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.error{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+label {
+    color: #404040 !important;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100% !important;
+}
+
+.card-secondary:not(.card-outline)>.card-header {
+    background-color: #00b8bd;
+}
+
+.card-primary:not(.card-outline)>.card-header {
+    background-color: #f7f7f7;
+    color: #6c6c6c !important;
+    border-bottom: 1px solid #e7e7e7f4;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #00b8bd;
+}
+
+.nav-tabs {
+    color: #747474;
+}
+
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext:hover {
+   /* box-shadow: 10px 10px red;*/
+}
+
+.ajs-close{
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    float: right;                    
+}
+.select2{
+    width:100% !important;
+}
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 2rem;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 0;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        /*padding: 1.25rem;*/
+        padding: 0;
+    }
+    .descricao-compra{
+      display: none;
+    }
+    a {
+        font-size: 0.8em !important;
+    }
+    .table {
+        font-size: 0.8em;
+    }
+    .table td, .table th {
+        padding: 0.5rem;
+    }
+    .copyright {
+      font-size: 0.6rem;
+    }
+}
